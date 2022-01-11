@@ -2,9 +2,9 @@
 
 [user]
 
-	name = Ladislas de Toldi
-	email = ladislas@detoldi.me
-	signingkey = C5241848279CD797
+	name = Hugo Pezziardi
+	email = hugo@pezziardi.net
+	signingkey = 75B0D9CC96FF8396
 
 [credential]
 
@@ -17,7 +17,7 @@
 
 [gpg]
 
-	program = /opt/homebrew/bin/gpg
+	program = /usr/local/bin/gpg
 
 [alias]
 

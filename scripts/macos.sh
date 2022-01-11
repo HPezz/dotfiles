@@ -52,7 +52,7 @@ echo "››› General UI/UX"
 echo "›››"
 
 DATE=$(date +"%Y%m%d")
-COMPUTER_NAME="LadBookPro$DATE"
+COMPUTER_NAME="HugoBookPro$DATE"
 
 print_action "Set computer name to $COMPUTER_NAME"
 try sudo scutil --set ComputerName "$COMPUTER_NAME"
@@ -274,8 +274,8 @@ echo "›››"
 echo "››› Dock, Dashboard & Mission Control"
 echo "›››"
 
-print_action "Change position of the Dock to right" # Available options: "left" "right" or "bottom"
-try defaults write com.apple.Dock orientation -string right
+# print_action "Change position of the Dock to right" # Available options: "left" "right" or "bottom"
+# try defaults write com.apple.Dock orientation -string right
 
 print_action "Enable highlight hover effect for the grid view of a stack (Dock)"
 try defaults write com.apple.dock mouse-over-hilite-stack -bool true
@@ -362,13 +362,13 @@ try defaults write com.apple.Terminal ShowLineMarks -int 0
 # Messages
 ###############################################################################
 
-echo ""
-echo "›››"
-echo "››› Messages"
-echo "›››"
+# echo ""
+# echo "›››"
+# echo "››› Messages"
+# echo "›››"
 
-print_action "Disable smart quotes in Messages.app"
-try defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
+# print_action "Disable smart quotes in Messages.app"
+# try defaults write com.apple.messageshelper.MessageController SOInputLineSettings -dict-add "automaticQuoteSubstitutionEnabled" -bool false
 
 
 ###############################################################################

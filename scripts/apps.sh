@@ -18,15 +18,15 @@ available_casks=$(brew list --cask)
 
 typeset -U casks
 casks=(
-	1password
+	
 	# adoptopenjdk
 	# aerial
-	alfred
+	
 	appcleaner
 	brave-browser
 	coolterm
 	dropbox
-	fantastical
+	
 	# glance
 	# google-chrome
 	# gpg-suite-no-mail
@@ -34,13 +34,13 @@ casks=(
 	macdown
 	rectangle
 	slack
-	# spotify
+	spotify
 	stats
 	sublime-text
 	# transmission
 	visual-studio-code
-	# vlc
-	# whatsapp
+	vlc
+	whatsapp
 )
 
 print_action "Install casks"

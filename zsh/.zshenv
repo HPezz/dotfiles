@@ -65,19 +65,13 @@ cdpath=(
 	$cdpath
 )
 
-# Set the list of directories that Zsh searches for programs.
-path=(
-	/opt/homebrew/{bin,sbin}
-	$path
-)
-
 #
 # Editors
 #
 
-if which nvim >/dev/null 2>&1; then
-	export EDITOR="nvim"
-	export VISUAL='nvim'
+if which code >/dev/null 2>&1; then
+	export EDITOR="code"
+	export VISUAL='code'
 else
 	export EDITOR="vim"
 	export VISUAL='vim'
@@ -89,7 +83,7 @@ fi
 
 # Avoid issues with `gpg` as installed via Homebrew.
 # https://stackoverflow.com/a/42265848/96656
-export GPG_TTY=$(tty);
+export GPG_TTY=$TTY;
 
 # zsh-syntax-highlighting
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters

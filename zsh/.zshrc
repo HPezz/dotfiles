@@ -14,9 +14,13 @@
 # macOS setup
 #
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 if [[ "$OSTYPE" == darwin* ]]; then
 
 	typeset -U lpath=() # set local path
+
+	lpath+="/opt/homebrew/bin /opt/homebrew/sbin"
 
 	# Use GNU Coreutils instead of Apple's
 	if which gwhoami >/dev/null 2>&1; then
@@ -37,7 +41,7 @@ if [[ "$OSTYPE" == darwin* ]]; then
 	lpath+="/opt/homebrew/lib/ruby/gems/3.0.0/bin"
 
 	# Python
-	lpath+="/Users/ladislas/Library/Python/3.9/bin/"
+	lpath+="/Users/hugo/Library/Python/3.9/bin/"
 
 	# Export $PATH
 	path=($lpath $path)

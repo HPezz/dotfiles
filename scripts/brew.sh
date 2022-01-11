@@ -73,7 +73,6 @@ formulae=(
 	gcovr
 	stlink
 	ccache
-	cppcheck
 	fastlane
 	open-ocd
 	swiftlint
